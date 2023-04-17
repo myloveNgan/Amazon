@@ -220,7 +220,7 @@ input:focus {
 
 .left-ul ul {
     line-height: 30px;
-    text-align: right;
+    margin-left: 30px;
 }
 
 .left-ul ul li a {
@@ -309,29 +309,33 @@ input:focus {
 }
 
 
-.myorder-firt ul{
+.myorder-firt ul {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
-.myorder-firt a {
+
+.gender-red {
     border-right: 2px solid #ddd;
-    padding: 0 10px;
+    padding: 0 23px;
     color: #000;
 }
-.red{
-    border-bottom: 3px solid red ;
-    padding: 10px 0px;
+
+.red {
+    border-bottom: 3px solid red;
+    padding: 8px 0px;
 }
-.red a{
+
+.red {
     color: red;
 }
-.gender-red {
+.myorder-firt li  {
     font-size: 17px;
-    border-bottom: 2px solid #ddd ;
-    padding: 10px 0px;
+    border-bottom: 2px solid #ddd;
+    padding: 8px 0px;
     color: #000;
 }
+
 
 .myorder-second ul {
     display: flex;
@@ -341,26 +345,356 @@ input:focus {
     padding: 30px 10px;
     margin-top: 20px;
 }
-.myorder-second li{
+.myreview ul{
+    background-color: #eee;
+    padding: 15px 10px ;
+}
+
+.myorder-second li {
     color: #000;
 }
-.myorder-firt-hover :hover a{
+
+.myorder-firt-hover :hover a {
     color: red;
 }
 
-@media screen and (max-width : 1024px) {
-    .login-menu{
-        display: none;
-    }
-    .personalcenter-center{
-        display: none;
-    }
-   .personalcenter-main-contain-l{
+.myorder-table {
     display: none;
-   }
-   .personalcenter-main-contain-r{
-     width: 80%;
-   }
-
+}
+/*Coupons*/
+a.fabu_btn {
+    float: right;
+    color: #fff;
+    background: #09c878 url(/assets/images/fabu_jia.png) no-repeat 6px 3px;
+    padding: 0 10px 0 28px;
+    margin: 0 10px 0 0;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 18px;
+}
+.myorder-firt-hover :hover a.fabu_btn {
+    color: #fff;
+}
+.myorder-firt-hover .li-none{
+    border-bottom: none;
 }
 
+/*Coupons*/
+
+/*Tài khoản nạp tiền*/
+.myorder-firt-end-l{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.Deposit{
+    margin: 30px 30px ;
+}
+.Deposit-item div{
+     padding : 10px 10px;
+     font-size: 20px;
+     color: #666;
+}
+.Deposit-input{
+    padding: 5px 10px;
+}
+.Deposit-item .in{
+    padding: 12px 30px;
+    border-radius:3px;
+    background: #ff5722;
+    border: none;
+    color: #fff;
+    margin:10px 0px 0px 120px;
+}
+.hy_table{
+    font-size: 16px;
+}
+.hy_table td {
+    padding: 10px 5px;
+    color: #666;
+    border: 0;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.input200 {
+    width: 200px;
+}
+.inputall {
+    height: 28px;
+    line-height: 28px;
+    border: 1px #ddd solid;
+    padding: 2px 7px;
+    font-size: 14px;
+    background: #fff;
+}
+.dj_btn {
+    background: linear-gradient(to right,#f7de36,#f4c953);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #b7722f;
+}
+
+.tjbtn {
+    width: 100px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+    background: rgb(255, 87, 34);
+    border-radius: 2px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+@media screen and (max-width : 1024px) {
+    .personalcenter {
+        display: none;
+    }
+    body{
+        background-color: #ececec;
+    }
+
+    .myorder-table {
+        display: block;
+        background-color: #ececec;
+        height: 100%;
+        padding: 0 10% 47% 10%;
+    }
+
+    .myorder-table-firt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    .fh a {
+        background: url(/assets/images/dd_icon.png) no-repeat scroll -105px -28px/200px 200px;
+        display: block;
+        width: 20px;
+        height: 22px;
+    }
+
+    .cd a {
+        background: url(/assets/images/dd_icon.png) no-repeat scroll -153px -91px/200px 200px;
+        display: block;
+        width: 25px;
+        height: 25px;
+    }
+
+    .myorder-table-end {
+        padding: 15px 5px;
+        background-color: #fff;
+    }
+
+    .myorder-table-end-hover :hover a {
+        color: red;
+    }
+
+    .myorder-table-end ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .myorder-table-end a {
+        color: #000;
+    }
+
+    .nodata {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    .nodata_img {
+        background: url(/assets/images/notene.png) no-repeat;
+        background-size: 70px auto;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .top_menu {
+        position: relative;
+        background: #404042;
+        z-index: 999;
+        line-height: 20px;
+    }
+
+    .top_menu ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .top_menu a {
+        color: #fff;
+    }
+
+    .top_tb1 {
+        display: block;
+        background: url(/assets/images/icon_tb.png) scroll 0 0/200px 200px;
+        width: 25px;
+        height: 23px;
+        margin: 0 auto;
+    }
+
+    .top_tb2 {
+        display: block;
+        background: url(/assets/images/icon_tb.png) scroll 0 0/200px 200px;
+        width: 25px;
+        height: 23px;
+        margin: 0 auto;
+    }
+
+    .top_menu li i.top_tb2 {
+        background-position: -30px -35px;
+        width: 26px;
+        height: 24px;
+    }
+
+    .top_menu li i.top_tb3 {
+        background-position: -60px 0;
+        height: 24px;
+    }
+
+    .top_menu li i.top_tb4 {
+        background-position: -93px 0;
+        width: 20px;
+    }
+
+    .top_tb3 {
+        display: block;
+        background: url(/assets/images/icon_tb.png) scroll 0 0/200px 200px;
+        width: 25px;
+        height: 23px;
+        margin: 0 auto;
+    }
+
+    .top_tb4 {
+        display: block;
+        background: url(/assets/images/icon_tb.png) scroll 0 0/200px 200px;
+        width: 25px;
+        height: 23px;
+        margin: 0 auto;
+    }
+
+    /*CapitanlDetails*/
+.myorder-table-img{
+    background: linear-gradient(#f75927,#f82a2a);
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 20px;
+    text-align: center;
+}
+.zh_jb i{
+    background: url(/assets/images/money.png) no-repeat;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-size: 80px auto;
+    margin: 0 auto 10px;
+}
+.tx_ul {
+    background: #fff;
+}
+.tx_ul ul li {
+    border-bottom: 1px solid #efefef;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    margin-left: 10px;
+    position: relative;
+}
+.tx_ul li.side_i9 span {
+    background-position: 0 -32px;
+}
+.tx_ul li span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    background: url(/assets/images/zt_ico.jpg) no-repeat scroll 0 0/200px 200px rgba(0,0,0,0);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.tx_ul ul li i {
+    background: url(/assets/images/jt.png) no-repeat;
+    width: 6px;
+    height: 10px;
+    display: block;
+    background-size: 6px 10px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -5px;
+}
+/*CapitanlDetails*/
+
+/*TÁCH RỜI*/
+.zh_jb span{
+    background: url(/assets/images/point.png) no-repeat;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-size: 80px auto;
+    margin: 0 auto 10px;
+}
+
+.tachroi{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 2px 5px 10px 5px;
+   margin-top: 20px;
+}
+
+.tachroi i {
+    width: 3px;
+    height: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    background: #f82a2a;
+    margin: 10px 10px 0;
+}
+
+/*TÁCH RỜI*/
+
+/*TÀI KHOẢN NẠP TIỀN*/
+.Deposit-table{
+    margin-top: 20px;
+}
+.Deposit-item div{
+    background-color: #fff;
+    border-bottom:1px solid #eee ;
+    font-size: 17px;
+}
+.Deposit-input{
+    border: none;
+    width: 60%;
+}
+.Deposit-input:focus{
+    outline: none;
+}
+.Deposit-item .in{
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
+/*TÀI KHOẢN NẠP TIỀN*/
+
+}

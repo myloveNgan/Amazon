@@ -90,9 +90,9 @@
                                 Quản lý giao dịch
                             </p>
                             <ul class="left-ul-hover">
-                                <li><a href="myorder.html">Đơn hàng của tôi</a></li>
-                                <li><a href="MyReviews.html">Nhận xét của tôi</a></li>
-                                <li><a href="Mycollection.html">Bộ sưu tập của tôi</a></li>
+                                <li><a href="">Đơn hàng của tôi</a></li>
+                                <li><a href="">Nhận xét của tôi</a></li>
+                                <li><a href="">Bộ sưu tập của tôi</a></li>
                                 <li><a href="">Hoàn lại tiền</a></li>
                             </ul>
                         </div>
@@ -126,24 +126,16 @@
                 </div>
 
                 <div class="personalcenter-main-contain-r">
-                    <div class="myorder-firt">
+                    <div class="myorder-firt" style="border-bottom: 1px solid #eee;">
                         <ul class="myorder-firt-hover">
-                            <li><a class="red" href="">Tất cả các đơn hàng</a></li>
-                            <li ><a class="gender-red" href="">Trong khi chờ thanh toán</a></li>
-                            <li><a class="gender-red" href="">Được giao</a></li>
-                            <li><a class="gender-red" href="">Để nhận hàng hóa</a></li>
-                            <li ><a class="gender-red" href="">Giao dịch hoàn thành</a></li>
-                            <li ><a class="gender-red" href="">Bình luận (0)</a></li>
+                            <li ><a class="red" href="">Nhận xét của tôi</a></li>
                         </ul>
                     </div>
 
-                    <div class="myorder-second">
-                        <ul>
-                            <li>Thông tin sản phẩm</li>
-                            <li>Hoàn lại tiền / trả lại</li>
-                            <li>Thực sự đã trả tiền($)</li>
-                            <li>Tiểu bang</a></li>
-                            <li>Vận hành</a></li>
+                    <div class="myorder-second myreview">
+                        <ul style="display: flex; justify-content: space-around;">
+                            <li>Chi tiết</li>
+                            <li>Thông tin sản phẩm</li>          
                         </ul>
                     </div>
 
@@ -170,27 +162,17 @@
             </div>
 
             <div>
-                <p style="font-size: 20px;">Đơn hàng của tôi</p>
+                <p style="font-size: 20px;">Nhận xét của tôi</p>
             </div>
 
-            <div class="cd"  onclick="toggleDiv()">
+            <div class="cd">
                 <a href=""></a>
             </div>
         </div>
 
-        <div class="myorder-table-end" >
-            <ul class="myorder-table-end-hover">
-                <li><a href="">Tất cả các</a></li>
-                <li><a href="">Trong khi chờ thanh toán</a></li>
-                <li><a href="">Được giao</a></li>
-                <li><a href="">Để nhận hàng hóa</a></li>
-                <li><a href="">Bình luận</a></li>
-            </ul>
-
-        </div>
 
 
-        <div class="top_menu" id="myDiv" style="display:none;">
+        <div class="top_menu">
             <ul>
                 <li><a href="">
                         <i class="top_tb1"></i>
@@ -223,18 +205,6 @@
         </div>
     </div>
 
-    <script>
-        var count = 0;
-        function toggleDiv() {
-           var myDiv = document.getElementById("myDiv");
-           if (count % 2 == 0) {
-              myDiv.style.display = "block";
-           } else {
-              myDiv.style.display = "none";
-           }
-           count++;
-        }
-     </script>
 </body>
 
 </html>

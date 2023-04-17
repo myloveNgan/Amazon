@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đơn hàng của tôi - Amazon</title>
-    <link rel="stylesheet" href="/assets/css/myorder.css">
+    <title>Tài khoản nạp tiền - Amazon</title>
+    <link rel="stylesheet" href="/assets/css/myorder.css">  
 </head>
 
 <body>
@@ -90,9 +90,9 @@
                                 Quản lý giao dịch
                             </p>
                             <ul class="left-ul-hover">
-                                <li><a href="myorder.html">Đơn hàng của tôi</a></li>
-                                <li><a href="MyReviews.html">Nhận xét của tôi</a></li>
-                                <li><a href="Mycollection.html">Bộ sưu tập của tôi</a></li>
+                                <li><a href="">Đơn hàng của tôi</a></li>
+                                <li><a href="">Nhận xét của tôi</a></li>
+                                <li><a href="">Bộ sưu tập của tôi</a></li>
                                 <li><a href="">Hoàn lại tiền</a></li>
                             </ul>
                         </div>
@@ -126,25 +126,29 @@
                 </div>
 
                 <div class="personalcenter-main-contain-r">
-                    <div class="myorder-firt">
-                        <ul class="myorder-firt-hover">
-                            <li><a class="red" href="">Tất cả các đơn hàng</a></li>
-                            <li ><a class="gender-red" href="">Trong khi chờ thanh toán</a></li>
-                            <li><a class="gender-red" href="">Được giao</a></li>
-                            <li><a class="gender-red" href="">Để nhận hàng hóa</a></li>
-                            <li ><a class="gender-red" href="">Giao dịch hoàn thành</a></li>
-                            <li ><a class="gender-red" href="">Bình luận (0)</a></li>
+                    <div class="myorder-firt myorder-firt-end-l" style="border-bottom: 1px solid #eee;">
+                        <ul class="myorder-firt-hover ">
+                            <li><a class="red" href="">Tách rời(0)</a></li>
+                            <li><a class="gender-red" style="border: none;" href="">Áp dụng để rút tiền</a></li>
+                            <li><a class="gender-red" style="border: none;"  href="">Kỉ lục rút tiền</a></li>
                         </ul>
                     </div>
 
-                    <div class="myorder-second">
-                        <ul>
-                            <li>Thông tin sản phẩm</li>
-                            <li>Hoàn lại tiền / trả lại</li>
-                            <li>Thực sự đã trả tiền($)</li>
-                            <li>Tiểu bang</a></li>
-                            <li>Vận hành</a></li>
-                        </ul>
+                    <div class="Deposit">
+                        <form class="Deposit-item" action="">
+                            <div>
+                                Thắng hạng : $<span style="color: red;">0.0</span>
+                            </div>
+                            <div>
+                                Lượng sạc : <span>$</span> <span></span> <input class="Deposit-input" type="text">
+                            </div>
+
+                            <div>
+                                Phương thức thanh toán : 
+                            </div>
+
+                            <input class="in"  type="submit" value="Gửi đi">
+                        </form>
                     </div>
 
                     <div>
@@ -170,27 +174,39 @@
             </div>
 
             <div>
-                <p style="font-size: 20px;">Đơn hàng của tôi</p>
+                <p style="font-size: 20px;">Tài khoản nạp tiền</p>
             </div>
 
-            <div class="cd"  onclick="toggleDiv()">
+            <div class="cd">
                 <a href=""></a>
             </div>
         </div>
 
-        <div class="myorder-table-end" >
-            <ul class="myorder-table-end-hover">
-                <li><a href="">Tất cả các</a></li>
-                <li><a href="">Trong khi chờ thanh toán</a></li>
-                <li><a href="">Được giao</a></li>
-                <li><a href="">Để nhận hàng hóa</a></li>
-                <li><a href="">Bình luận</a></li>
-            </ul>
+        <div class="Deposit-table">
+            <form class="Deposit-item" action="">
+                <div>
+                    Thắng hạng : $<span style="color: red;">0.0</span>
+                </div>
+                <div>
+                    Lượng sạc : <span>$</span> <span></span> <input class="Deposit-input" type="text" placeholder="Vui lòng liên hệ với người quản lý để nạp tiền">
+                </div>
 
+                <div>
+                    Phương thức thanh toán : <input class="Deposit-input" type="text" placeholder="Vui lòng liên hệ với người quản lý để nạp tiền">
+                </div>
+
+                <input class="in"  type="submit" value="Gửi đi">
+            </form>
         </div>
 
 
-        <div class="top_menu" id="myDiv" style="display:none;">
+        
+
+        
+
+
+
+        <div style="display: none;" class="top_menu">
             <ul>
                 <li><a href="">
                         <i class="top_tb1"></i>
@@ -223,18 +239,6 @@
         </div>
     </div>
 
-    <script>
-        var count = 0;
-        function toggleDiv() {
-           var myDiv = document.getElementById("myDiv");
-           if (count % 2 == 0) {
-              myDiv.style.display = "block";
-           } else {
-              myDiv.style.display = "none";
-           }
-           count++;
-        }
-     </script>
 </body>
 
 </html>

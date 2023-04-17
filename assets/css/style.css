@@ -335,7 +335,7 @@ img {
 }
 .hero-policy__img {
     display: block;
-    background: url(../images/policy.png) no-repeat;
+    background: url(/assets/images/policy.png) no-repeat;
     width: 45px;
     height: 45px;
 }
