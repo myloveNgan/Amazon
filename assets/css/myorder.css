@@ -453,6 +453,10 @@ tr{
     border-color: initial;
     border-image: initial;
 }
+
+.pas td{
+    padding: 13px 4.6px;
+}
 @media screen and (max-width : 1024px) {
     .personalcenter {
         display: none;
@@ -696,5 +700,27 @@ tr{
     margin: 10px 0px 0px 0px;
 }
 /*TÀI KHOẢN NẠP TIỀN*/
+
+/*Tài khoản cá nhân*/
+.PersonalInfor {
+    margin-top: 20px;
+}
+.PersonalInfor div{
+    background-color: #fff;
+    padding: 13px;
+    border-bottom: 1px solid #eee;
+}
+.PersonalInfor img{
+    
+}
+
+.PersonalInfor div a{
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Tài khoản cá nhân*/
+
 
 }
