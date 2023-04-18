@@ -1,0 +1,313 @@
+.product-content__item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.product-content__item .title {
+    padding-left: 10px;
+    border-left: 4px solid #444;
+}
+
+.product-content__item table, thead, tbody {
+    border: 1px solid #eee;
+}
+
+.product-content__item table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+thead tr {
+    background-color: #f7f7f7;
+}
+table td, table th {
+    padding: 12px;
+}
+
+tbody .img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+tbody tr {
+    border-bottom: 1px #ebebeb solid;
+}
+
+tbody tr .img {
+    display: flex;
+    align-items: center;
+}
+
+tbody tr .img input {
+    margin-right: 24px;
+}
+
+tbody tr .text {
+    font-size: 1.2rem;
+    color: #36c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tbody tr .price {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+tbody tr .price-2 {
+    color: #ff5a00;
+}
+
+tbody tr .delete {
+    font-size: 1.3rem;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tbody tr td {
+    padding-left: 30px;
+}
+
+tbody tr .quantity {
+    display: flex;
+    align-items: center;
+}
+tbody tr .quantity span {
+    border: 1px solid #d5d3d3;
+    padding: 4px 8px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tbody tr .quantity .number {
+    border-left: none;
+    border-right: none;
+    padding: 0 20px;
+}
+
+tbody .bottom {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    color: rgb(102, 102, 102);
+    background: rgb(239, 239, 239);
+}
+
+tbody .bottom .btn button {
+    color: rgb(255, 255, 255);
+    width: 138px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 102, 107);
+    margin: 5px 5px 0px 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+tbody .bottom td {
+    padding: 0 6px 6px 30px;
+}
+
+.header-cart__mb {
+    display: none;
+}
+
+.products-cart__mb {
+    display: none;
+}
+
+.ft-cart__mb {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .main-content {
+        max-width: calc(100% - 48px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main-content {
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .header-cart__mb {
+        display: block;
+    }
+    
+    .products-cart__mb {
+        display: block;
+    }
+    
+    .header {
+        display: none;
+    }
+    .products {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+
+    .header-cart__mb {
+        display: flex;
+        padding:16px 12px;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+    .cart-item__mb {
+        position: relative;
+        margin-top: 12px;
+        padding: 12px;
+        display: flex;
+        background-color: #fff;
+    }
+
+    .header-cart__mb i {
+        font-size: 2.2rem;
+        color: #888;
+    }
+    .cart-item__mb img {
+        margin: 0 12px 0 30px;
+        width: 80px;
+        height: 80px;object-fit: cover;
+    }
+    .name-cart__mb {
+        font-size: 1.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #444;
+        line-height: 1.4;
+    }
+
+    .price-cart__mb {
+        color: #FC6D02;
+        margin-top: 4px;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .cart-item__mb > div {
+        position: relative;
+    }
+
+    .quantity-cart__mb {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .quantity-cart__mb span {
+        padding: 6px 12px;
+        background-color: #f5f5f5;
+    }
+    .quantity-cart__mb span:nth-child(2) {
+        border-right: 0;
+        border-left: 0;
+        padding: 6px 22px;
+        margin: 0 -3px;
+    }
+
+    .cart-item__mb label::before,
+    .cart-item__mb label::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+    }
+
+    .cart-item__mb label::before {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #bebebe;
+        border-radius: 50%;
+        top: 30px;
+    }
+
+    .cart-item__mb [type="checkbox"]:checked ~ label::before {
+        background-color: #06bfac;
+        border-color: #06bfac;
+    }
+    .cart-item__mb [type="checkbox"]:checked ~ label::after {
+        width: 9px;
+        height: 4px;
+        top: 35px;
+        left: 4px;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        rotate: -45deg;
+    }
+
+    .ft-cart__mb {
+        padding: 20px 8px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+    }
+    .ft-cart__mb .process {
+        position: absolute;
+        right: 0;
+        background-color: #ff6501;
+        padding: 20px 10px;
+        color: #fff;
+        font-size: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ft-cart__mb .price-all {
+        display: flex;
+        position: absolute;
+        right: 120px;
+    }
+    .ft-cart__mb .price-all span {
+        margin-left: 4px;
+        font-size: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #FC6D02;
+    }
+    
+    .checkbox label::before,
+    .checkbox label::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+    }
+
+    .checkbox label {
+        margin-left: 30px;
+    }
+
+    .checkbox label::before {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #bebebe;
+        border-radius: 50%;
+        top: 18px;
+        left: 10px;
+    }
+
+    .checkbox [type="checkbox"]:checked ~ label::before {
+        background-color: #06bfac;
+        border-color: #06bfac;
+    }
+    .checkbox [type="checkbox"]:checked ~ label::after {
+        width: 9px;
+        height: 4px;
+        top: 23px;
+        left: 14px;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        rotate: -45deg;
+    }
+    
+}

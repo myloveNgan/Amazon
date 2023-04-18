@@ -48,6 +48,9 @@ img {
 }
 
 /* Header */
+.header-mobile {
+    display: none;
+}
 .header-top {
     display: flex;
     align-items: center;
@@ -251,6 +254,17 @@ img {
 }
 
 /* Hero */
+.banner-mobile {
+    display: none;
+}
+
+.service-mobile {
+    display: none;
+}
+
+.navigate-mobile {
+    display: none;
+}
 .hero .list-product {
     position: relative;
     background: rgb(221, 69, 69);
@@ -335,7 +349,7 @@ img {
 }
 .hero-policy__img {
     display: block;
-    background: url(/assets/images/policy.png) no-repeat;
+    background: url(../images/policy.png) no-repeat;
     width: 45px;
     height: 45px;
 }
@@ -453,9 +467,21 @@ img {
 }
 
 .products .product-list {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 20px; */
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+}
+
+.products .product-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: calc(25% - 20px);
+    padding: 16px;
+    margin-bottom: 16px;
 }
 .products .product-pages li a {
     color: #999;
@@ -466,16 +492,10 @@ img {
     margin:  0 10px;
 }
 
-.products .product-item {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    width: max-content;
-    padding: 16px;
-}
+
 .products .product-item img {
-    width: 250px;
-    height: 250px;
+    /* width: 250px;
+    height: 250px; */
     object-fit: cover;
 }
 
@@ -483,7 +503,6 @@ img {
     margin-top: 10px;
     font-size: 1.6rem;
     line-height: 24px;
-    max-width: 250px;
     color: rgb(102, 102, 102);
 }
 
